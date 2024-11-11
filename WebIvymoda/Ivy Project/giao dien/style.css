@@ -1,0 +1,72 @@
+/*áp dụng một style nào đó cho tất cả các thẻ HTML trong tài liệu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6ec1e4;
+}
+
+#doan {
+  width: 250px;
+  height: 150px;
+  color: red;
+  background-color: yellow;
+  padding: 0;
+}
+
+/* Bỏ dấu danh sách cho thẻ li */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 50px;
+  height: 100px;
+  background-color: b;
+}
+
+.logo {
+  flex: 1;
+}
+.menu {
+  flex: 3;
+  display: flex;
+}
+
+.menu > li {
+  /* Màu chữ */
+  color: black;
+  font-style: italic; /* Kiểu chữ   */
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  padding: 0 12px;
+  font-size: 25px;
+}
+
+.others {
+  flex: 1;
+  display: flex;
+}
+.others > li {
+  padding: 0 10px;
+}
+.others > li:first-child {
+  position: relative;
+}
+
+.others > li:first-child input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.others > li:first-child i {
+  position: absolute;
+  right: 10px;
+}
