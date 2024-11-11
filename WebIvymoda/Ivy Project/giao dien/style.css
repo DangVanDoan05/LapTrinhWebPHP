@@ -1,72 +1,34 @@
 /*áp dụng một style nào đó cho tất cả các thẻ HTML trong tài liệu */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Khoảng cách với các phần tử liền kề khác. */
+  padding: 0; /* Khoảng đệm giữa nội dung và viền  */
+  box-sizing: border-box; /* Kích thước của box nó sẽ tự động căn theo= kích thước của Border + Padding +Content. Link tham khảo: https://www.youtube.com/watch?v=bv16wjxgV4U  */
   font-family: Arial, Helvetica, sans-serif;
-  color: #6ec1e4;
-}
-
-#doan {
-  width: 250px;
-  height: 150px;
-  color: red;
-  background-color: yellow;
-  padding: 0;
 }
 
 /* Bỏ dấu danh sách cho thẻ li */
-li {
-  list-style: none;
-}
 
-a {
-  text-decoration: none;
-}
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 50px;
-  height: 100px;
-  background-color: b;
+  display: flex; /*Thuộc tính Flex để dãn đều. Dàn hàng ngang cho 3 khối trong Header. */
+  justify-content: space-between; /*Hàm căn theo chiều ban đầu đã chọn là chiều hàng ngang.  Dãn đều theo không gian.*/
 }
 
 .logo {
-  flex: 1;
+  /*Các phần tử sẽ chia đề không gian bên trong Container.*/
+  flex: 1; /*Chiếm một phần chiều ngang*/
 }
+
+/*Phải đi học về Flexbox thì mới hiểu được.*/
+
 .menu {
-  flex: 3;
-  display: flex;
+  /* Họ viết là Flex: 3 nên chưa hiểu lắm.*/
+  flex: 3; /*Chiếm ba phần chiều ngang*/
 }
 
-.menu > li {
-  /* Màu chữ */
-  color: black;
-  font-style: italic; /* Kiểu chữ   */
-  font-family: "Times New Roman", Times, serif;
-  text-transform: uppercase;
-  padding: 0 12px;
-  font-size: 25px;
+.other {
+  flex: 1; /*Đây là một cách ghi rút ghọn.*/ /*Chiếm một phần chiều ngang*/
 }
 
-.others {
-  flex: 1;
-  display: flex;
-}
-.others > li {
-  padding: 0 10px;
-}
-.others > li:first-child {
-  position: relative;
-}
-
-.others > li:first-child input {
-  width: 80%;
-  border: none;
-  border-bottom: 1px solid black;
-}
-
-.others > li:first-child i {
-  position: absolute;
-  right: 10px;
+h1 {
+  display: inline-block;
 }
