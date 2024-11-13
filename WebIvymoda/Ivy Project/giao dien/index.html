@@ -36,9 +36,34 @@
         <!-- Chèn thẻ hình ảnh vào trong trang Web. -->
       </div>
 
+      <!--Thẻ a là thẻ liên kết. href là liên kết đến Link nào. -->
       <div class="menu">
-        <li><a href="">NỮ</a></li>
-        <!--Thẻ a là thẻ liên kết. href là liên kết đến Link nào. -->
+        <li>
+          <a href="">NỮ</a>
+          <ul class="sub-menu">
+            <li><a href="">Hàng mới về</a></li>
+            <li><a href="">Collection</a></li>
+            <li>
+              <a href="">Áo</a>
+              <ul>
+                <!--Danh sách không có thứ tự.-->
+                <li><a href="">Áo sơ mi</a></li>
+                <!--Phần tử có trong danh sách.-->
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Áo khoác</a></li>
+                <li><a href="">Áo len</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Quần</a>
+              <ul>
+                <li><a href="">Quần dài</a></li>
+                <li><a href="">Quần lửng</a></li>
+                <li><a href="">Quần kaki</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="">NAM</a></li>
         <li><a href="">TRẺ EM</a></li>
         <li><a href="">SALE</a></li>
@@ -58,6 +83,20 @@
       </div>
     </header>
 
+    <section id="Slider">
+      <div class="aspect-ratio-169">
+        <img src="image/slide1.jpg" />
+        <!--Chèn hình ảnh vào.-->
+        <img src="image/slide2.jpg" />
+        <img src="image/slide3.jpg" />
+        <img src="image/slide4.jpg" />
+      </div>
+    </section>
+
     <!--Độ co giãn 1 và độ co giãn 2.-->
   </body>
+  <script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
+    imgPosition.forEach(function (image, index) {});
+  </script>
 </html>
