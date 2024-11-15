@@ -6,16 +6,12 @@ using System.Web.Mvc;
 
 namespace Web2.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
-
-        // GET: Home
-        // Luôn chạy File Index đầu tiên.
+        // GET: About
         public ActionResult Index()
-        {           
+        {
             return View();
         }
-
-     
     }
 }
